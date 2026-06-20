@@ -1,0 +1,22 @@
+.ds-announce {
+  background: var(--ds-color-ink);
+  color: #fff;
+  text-align: center;
+  padding: var(--ds-space-2) var(--ds-space-4);
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-text-sm);
+  letter-spacing: 0.02em;
+}
+.ds-announce__inner {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ds-announce__action {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}

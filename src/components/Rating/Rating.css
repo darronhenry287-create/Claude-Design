@@ -1,0 +1,25 @@
+.ds-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-2);
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-text-sm);
+}
+.ds-rating__track {
+  position: relative;
+  display: inline-block;
+  color: var(--ds-color-line);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.ds-rating__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: var(--ds-color-accent);
+  white-space: nowrap;
+}
+.ds-rating__count {
+  color: var(--ds-color-muted);
+}

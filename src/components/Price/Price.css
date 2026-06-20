@@ -1,0 +1,18 @@
+.ds-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--ds-space-2);
+  font-family: var(--ds-font-body);
+}
+.ds-price__now {
+  font-weight: 600;
+  color: var(--ds-color-ink);
+}
+.ds-price__now--sale {
+  color: var(--ds-color-sale);
+}
+.ds-price__was {
+  font-size: 0.9em;
+  color: var(--ds-color-muted);
+  text-decoration: line-through;
+}

@@ -1,0 +1,66 @@
+/*
+ * Maison UI — design tokens.
+ * Re-brand the whole kit by overriding these on :root. Every component
+ * reads from these variables, so changing the palette here re-skins
+ * everything (buttons, cards, hero, etc.) at once.
+ */
+:root {
+  /* Brand palette — a warm, premium DTC default. */
+  --ds-color-ink: #1b1714;        /* near-black text / primary surfaces */
+  --ds-color-paper: #f6f1ea;      /* warm page background */
+  --ds-color-surface: #ffffff;    /* cards, sheets */
+  --ds-color-accent: #c0552e;     /* terracotta — buttons, highlights */
+  --ds-color-accent-ink: #ffffff; /* text on accent */
+  --ds-color-muted: #8a817a;      /* secondary text */
+  --ds-color-line: #e6ded3;       /* hairline borders */
+  --ds-color-sale: #b3261e;       /* sale price */
+  --ds-color-success: #3f6f4f;    /* in-stock / confirm */
+
+  /* Typography */
+  --ds-font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --ds-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ds-text-xs: 0.75rem;
+  --ds-text-sm: 0.875rem;
+  --ds-text-base: 1rem;
+  --ds-text-lg: 1.25rem;
+  --ds-text-xl: 1.75rem;
+  --ds-text-2xl: 2.5rem;
+  --ds-text-3xl: 3.5rem;
+
+  /* Spacing scale (4px base) */
+  --ds-space-1: 0.25rem;
+  --ds-space-2: 0.5rem;
+  --ds-space-3: 0.75rem;
+  --ds-space-4: 1rem;
+  --ds-space-5: 1.5rem;
+  --ds-space-6: 2rem;
+  --ds-space-8: 3rem;
+  --ds-space-10: 4rem;
+
+  /* Radius */
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 20px;
+  --ds-radius-pill: 999px;
+
+  /* Elevation */
+  --ds-shadow-sm: 0 1px 2px rgba(27, 23, 20, 0.06);
+  --ds-shadow-md: 0 10px 30px -12px rgba(27, 23, 20, 0.25);
+
+  /* Motion */
+  --ds-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Opt-in base so the demo + any consumer page inherits brand typography. */
+.ds-root {
+  font-family: var(--ds-font-body);
+  color: var(--ds-color-ink);
+  background: var(--ds-color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+.ds-root *,
+.ds-root *::before,
+.ds-root *::after {
+  box-sizing: border-box;
+}

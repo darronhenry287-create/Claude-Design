@@ -1,0 +1,29 @@
+.ds-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3em 0.7em;
+  border-radius: var(--ds-radius-pill);
+  line-height: 1;
+}
+.ds-badge--neutral {
+  background: var(--ds-color-line);
+  color: var(--ds-color-ink);
+}
+.ds-badge--sale {
+  background: var(--ds-color-sale);
+  color: #fff;
+}
+.ds-badge--new {
+  background: var(--ds-color-ink);
+  color: #fff;
+}
+.ds-badge--soldout {
+  background: var(--ds-color-surface);
+  color: var(--ds-color-muted);
+  border: 1px solid var(--ds-color-line);
+}
