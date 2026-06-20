@@ -4,6 +4,22 @@ A small, brand-able **DTC ecommerce component library** — React + TypeScript, 
 
 This repo is structured to be consumed by **[claude.ai/design](https://claude.ai/design)** via `/design-sync`: it compiles to a real `dist/` (ESM + UMD + types + CSS), so the design agent can build on-brand storefront UI from these exact components.
 
+## Brand Studio
+
+An interactive **brand-kit builder** (`studio.html`) built on top of these components. Dial in a brand — colors, fonts, button shape, roundness — watch a storefront re-skin **live**, then export a ready-to-use kit that unifies your whole pipeline:
+
+| Export | Plugs into |
+| --- | --- |
+| `CLAUDE.md` | **Claude Code** — a brand spec it reads so every task builds on-brand. Drop into your project repo. |
+| `brand.liquid` | your **Shopify theme** — fonts + CSS variables + base styling, via `{% render 'brand' %}`. |
+| `brand.tokens.css` / `brand.json` | design tokens + machine-readable source of truth. |
+
+```bash
+npm run dev   # then open http://localhost:5173/studio.html
+```
+
+The idea: **define a brand once**, and feed the same definition to your design, your Shopify build, and Claude Code — instead of re-deriving it (and re-explaining it to the AI) on every project.
+
 ## Components
 
 | Component | What it's for |
